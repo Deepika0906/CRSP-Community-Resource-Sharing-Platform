@@ -1,0 +1,113 @@
+:root {
+  --crsp-green: #1e7d4f;
+  --crsp-green-dark: #16603c;
+  --crsp-amber: #e8a53d;
+  --crsp-bg: #f6f8f6;
+  --crsp-text: #1f2a24;
+}
+
+body {
+  background-color: var(--crsp-bg);
+  color: var(--crsp-text);
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+.btn-crsp {
+  background-color: var(--crsp-green);
+  border-color: var(--crsp-green);
+  color: #fff;
+}
+.btn-crsp:hover {
+  background-color: var(--crsp-green-dark);
+  border-color: var(--crsp-green-dark);
+  color: #fff;
+}
+
+.badge-free {
+  background-color: var(--crsp-amber);
+  color: #3a2a00;
+  font-weight: 600;
+}
+
+.badge-lend {
+  background-color: #2c6fbb;
+}
+
+.resource-card {
+  border: none;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  height: 100%;
+}
+.resource-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.resource-card img.card-img-top {
+  height: 180px;
+  object-fit: cover;
+  background: #eef1ee;
+}
+
+.hero-section {
+  background: linear-gradient(135deg, var(--crsp-green) 0%, var(--crsp-green-dark) 100%);
+  color: #fff;
+  border-radius: 20px;
+  padding: 4rem 2rem;
+}
+
+.status-pill {
+  font-size: 0.75rem;
+  padding: 0.3em 0.7em;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.status-AVAILABLE { background: #d7f2e3; color: #0f5c34; }
+.status-RESERVED { background: #fdecc8; color: #7a4e00; }
+.status-BORROWED { background: #d9e6fb; color: #16408a; }
+.status-CLAIMED_PENDING_HANDOVER { background: #fdecc8; color: #7a4e00; }
+.status-HANDED_OVER { background: #e4e4e4; color: #444; }
+.status-CANCELLED { background: #fbe0e0; color: #8a1616; }
+
+.empty-state {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: #6c7a70;
+}
+
+.navbar-crsp {
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.footer-crsp {
+  background: #16221a;
+  color: #cfe3d5;
+  padding: 2rem 0;
+  margin-top: 4rem;
+}
+
+.form-label {
+  font-weight: 600;
+}
+
+.notif-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #e8543d;
+  display: inline-block;
+}
